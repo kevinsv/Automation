@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+    app:
+        build: .
+        environment:
+            - ExqqiBACH8tH4ehNwpVX
+            - kevinsalgado3

@@ -1,0 +1,17 @@
+2018-12-20 05:07:01,020 WARN Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+2018-12-20 05:07:01,021 INFO supervisord started with pid 9
+2018-12-20 05:07:02,029 INFO spawned: 'xvfb' with pid 12
+2018-12-20 05:07:02,031 INFO spawned: 'selenium-standalone' with pid 13
+05:07:02.234 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+2018-12-20 05:07:02,236 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2018-12-20 05:07:02,236 INFO success: selenium-standalone entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+05:07:02.323 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2018-12-20 05:07:02.369:INFO::main: Logging initialized @326ms to org.seleniumhq.jetty9.util.log.StdErrLog
+05:07:02.589 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+05:07:02.663 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+2018-12-20 05:07:02,908 WARN received SIGTERM indicating exit request
+2018-12-20 05:07:02,909 INFO waiting for xvfb, selenium-standalone to die
+2018-12-20 05:07:02,909 INFO stopped: selenium-standalone (terminated by SIGTERM)
+2018-12-20 05:07:02,910 INFO stopped: xvfb (terminated by SIGTERM)
+Shutdown complete

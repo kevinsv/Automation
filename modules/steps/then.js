@@ -25,7 +25,7 @@ import compareText from '../support/check/compareText';
 import isEnabled from '../support/check/isEnabled';
 import isExisting from '../support/check/isExisting';
 import isVisible from '../support/check/isVisible';
-import waitFor from '../support/action/waitFor';
+//import waitFor from '../support/action/waitFor';
 import waitForVisible from '../support/action/waitForVisible';
 import checkIfElementExists from '../support/check/checkIfElementExists';
 
@@ -164,15 +164,15 @@ Then(
     checkFocus
 );
 
-Then(
-    /^I wait on element "([^"]*)?"(?: for (\d+)ms)*(?: to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/,
-    {
-        wrapperOptions: {
-            retry: 3,
-        },
-    },
-    waitFor
-);
+//Then(
+//    /^I wait on element "([^"]*)?"(?: for (\d+)ms)*(?: to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/,
+ //   {
+ //       wrapperOptions: {
+ //           retry: 3,
+ //       },
+  //  },
+ //   waitFor
+//);
 
 Then(
     /^I expect that a (alertbox|confirmbox|prompt) is( not)* opened$/,
