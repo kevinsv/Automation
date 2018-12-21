@@ -46,40 +46,6 @@ $ npm run test:standalone -- --spec ./features/FeatureFileName.feature
 
 _please note_ The WDIO runner uses the configuration file `wdio.conf.js` by default.
 
-
-# Using tags
-
-If you want to run only specific tests you can mark your features with tags. These tags will be placed before each feature like so:
-
-gherkin
-@Tag
-Feature: ...
-
-
-To run only the tests with specific tag(s) use the `--tags=` parameter like so:
-
-sh
-$ npm run test:local -- --tags=@Tag,@AnotherTag
-
-
-You can add multiple tags separated by a comma
-
-# Pending test
-
-If you have failing or unimplemented tests you can mark them as "Pending" so they will get skipped.
-
-gherkin
-// skip whole feature file
-@Pending
-Feature: ...
-
-// only skip a single scenario
-@Pending
-Scenario: ...
-
-
-# Adding new steps and snippets
-
 The predefined snippets allow you to do a lot of common things but you might need extra snippets which
 are better aligned with your aims. To do so you will find all step definitions in `./modules/steps`. They
 are separated in `given`, `when` and `then`. 
